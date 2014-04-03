@@ -1,3 +1,3 @@
 PdfViewerRails::Engine.routes.draw do
-  match '/' => 'pdf_viewer#show'
+  root :to => 'pdf_viewer#show'
 end
