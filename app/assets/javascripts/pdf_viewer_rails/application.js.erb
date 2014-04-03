@@ -1,0 +1,9 @@
+ //= require compatibility
+ //= require l10n
+ //= require pdf
+ //= require viewer
+
+(function() {
+    'use strict';
+    PDFJS.workerSrc = "<%= asset_path 'pdf.worker' %>";
+})();
