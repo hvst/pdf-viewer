@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pdf-viewer-rails (0.0.1)
+    pdf_viewer_rails (0.0.1)
       rails (~> 3.2.17)
 
 GEM
@@ -89,5 +89,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pdf-viewer-rails!
+  pdf_viewer_rails!
   sqlite3
