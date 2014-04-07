@@ -1,9 +1,9 @@
- //= require compatibility
- //= require l10n
- //= require pdf
- //= require viewer
+ //= require pdf_viewer_rails/compatibility
+ //= require pdf_viewer_rails/l10n
+ //= require pdf_viewer_rails/pdf
+ //= require pdf_viewer_rails/viewer
 
 (function() {
     'use strict';
-    PDFJS.workerSrc = "<%= asset_path 'pdf.worker' %>";
+    PDFJS.workerSrc = "<%= asset_path 'pdf_viewer_rails/pdf.worker' %>";
 })();
