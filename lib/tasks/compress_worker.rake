@@ -5,6 +5,6 @@ namespace :pdf_viewer do
 
   def run_compressor
     `rm vendor/assets/javascripts/worker.min.js`
-    `closure-compiler  --compilation_level=WHITESPACE_ONLY --language_in=ECMASCRIPT5 vendor/assets/javascripts/worker.js > vendor/assets/javascripts/worker.min.js`
+    `closure-compiler --warning_level QUIET  --compilation_level SIMPLE_OPTIMIZATIONS --language_in=ECMASCRIPT5 vendor/assets/javascripts/worker.js > vendor/assets/javascripts/worker.min.js`
   end
 end
