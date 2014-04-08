@@ -24,7 +24,7 @@ module PdfViewerRails
           'vendor',
           'assets',
           'javascripts',
-          'worker.js'
+          'worker.min.js'
         )
     end
 
