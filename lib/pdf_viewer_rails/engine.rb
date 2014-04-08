@@ -9,5 +9,9 @@ module PdfViewerRails
         pdf_viewer_rails/viewer.css
       )
     end
+
+    initializer "static assets" do |app|
+      app.middleware.use ::ActionDispatch::Static, "#{root}/public"
+    end
   end
 end
