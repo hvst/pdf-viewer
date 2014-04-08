@@ -25,7 +25,12 @@ http://sourceforge.net/adobe/cmap/wiki/License/
 
     <%= stylesheet_link_tag 'pdf_viewer_rails/viewer' %>
     <%= javascript_include_tag 'pdf_viewer_rails/application' %>
-
+    <script>
+    (function() {
+        'use strict';
+        PDFJS.workerSrc = "<%= pdf_worker_path format: 'js' %>";
+    })();
+    </script>
   </head>
 
   <body tabindex="1">
