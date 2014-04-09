@@ -7,6 +7,7 @@ module PdfViewerRails
         pdf_viewer_rails/application.js.erb
         pdf_viewer_rails/pdf.worker.js
         pdf_viewer_rails/viewer.css
+        pdf_viewer_rails/viewer_customizations.css
       )
     end
 
