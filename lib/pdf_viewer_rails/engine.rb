@@ -11,7 +11,7 @@ module PdfViewerRails
     end
 
     initializer "static assets" do |app|
-      app.middleware.use ::ActionDispatch::Static, "#{root}/public/pdf_viewer_rails"
+      app.middleware.use ::ActionDispatch::Static, "#{root}/public/"
     end
   end
 end
