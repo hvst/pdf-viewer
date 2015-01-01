@@ -6472,6 +6472,10 @@ var AnnotationUtils = (function AnnotationUtilsClosure() {
     var link = document.createElement('a');
     link.href = link.title = item.url || '';
 
+    // XXX: Force links to open in a new tab/window. See:
+    // https://gist.github.com/CodingFabian/11178827
+    link.target = '_blank';
+
     container.appendChild(link);
 
     return container;
